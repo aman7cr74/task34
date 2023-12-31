@@ -1,0 +1,109 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>SMARTSERV</title> 
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f5f5f5; }
+        .container {
+            background-color: #141111;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #35be23; /* Green color */
+            padding: 10px; /* Optional: Add padding to the h1 element */
+            border-radius: 5px; /* Optional: Add border-radius for rounded corners */
+        }
+
+        .image-container {
+            text-align: center;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+        }
+
+        .form-group button {
+            width: 100%;
+            padding: 5px;
+            background-color: #35be23;
+            color: #ffffff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .form-group button:hover {
+            background-color: #0056b3;
+        }
+
+        .form-group a {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .form-group a:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img src="./sign_zn.png" alt="Image Description">
+        </div>
+        <h1>SMART SERV</h1> 
+        <form onsubmit="redirectToNextPage(event)">
+            <div class="form-group">
+                <label for="username" aria-placeholder="Username">Username</label> 
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            </div> 
+            <div class="form-group">
+                <label for="password" aria-placeholder="Password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required> 
+            </div> 
+            <div class="form-group">
+                <button type="submit">Login</button> 
+            </div> 
+            <div class="form-group"> <a href="#">Forgot your password?</a> </div>
+        </form>
+
+        <script>
+            function redirectToNextPage(event) {
+                // Prevent the default form submission behavior
+                event.preventDefault();
+                
+                // Redirect to the next page
+                window.location.href = 'indexx.html'; // Replace 'next_page.html' with the actual page URL
+            }
+        </script>
+    </div>
+</body>
+</html>
